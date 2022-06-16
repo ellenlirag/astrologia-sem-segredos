@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Astrologia Sem Segredos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site construído na aula da disciplina de Introdução à Web">
+    <meta name="keywords" content="signo, astrologia, universo">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/semfundo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="plugins/magnific-popup.css">
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                auto: true,
+                pager: true,
+
+            }
+
+            );
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300,
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <div class="logo">
+            <img src="imagens/semfundo.png">
+        </div>
+        <ul id="menu-secundario">
+            <li><a href="https://www.personare.com.br/astrologia/mapa-astral" target="_blank"> Mapa Astral </a> </li>
+            <li> <a href="https://www.personare.com.br/astrologia/horoscopo?variant=ImprovedProductHighlightsWithTop" target="_blank"> Horóscopo Personalizado </a> </li>
+            <li> <a href="https://www.personare.com.br/astrologia/sinastria-amorosa" target="_blank"> Sinastria Amorosa </a> </li>
+        </ul>
+    </header>
+
+    <section id="banners">
+        <div class="">
+            <ul class="slider">
+                <li><img src="imagens/banners/slide1.png"></li>
+                <li><img src="imagens/banners/slide2.gif"></li>
+                <li><img src="imagens/banners/slide3.gif"></li>
+                <li><img src="imagens/banners/slide4.gif"></li>
+
+            </ul>
+        </div>
+    </section>
+
+    <nav id="menu">
+        <h1> OS SIGNOS NO SEU MAPA ASTRAL</h1>
+        <h2> Veja como as energias inspiradas pelos signos podem influenciar você</h2>
+        <ul class="listas">
+            <li> <a href="internas/aries.html" target="_blank"><span>&#9800;</span> Áries</a> </li>
+
+            <li> <a href="internas/touro.html" target="_blank"> <span>&#9801;</span> Touro </a> </li>
+
+            <li> <a href="internas/gemeos.html" target="_blank"><span>&#9802;</span> Gêmeos </a> </li>
+
+            <li> <a href="internas/cancer.html" target="_blank"> <span>&#9803;</span> Câncer</a> </li>
+
+            <li> <a href="internas/leao.html" target="_blank"> <span>&#9804;</span> Leão</a> </li>
+
+            <li> <a href="internas/virgem.html" target="_blank"> <span>&#9805;</span>Virgem</a> </li>
+
+            <li> <a href="internas/libra.html" target="_blank"><span>&#9806;</span>Libra </a> </li>
+
+            <li> <a href="internas/escorpiao.html" target="_blank"><span>&#9807;</span>Escorpião </a> </li>
+
+            <li> <a href="internas/sagitario.html" target="_blank"><span>&#9808;</span>Sagitário </a> </li>
+
+            <li> <a href="internas/capricornio.html" target="_blank"><span>&#9809;</span>Capricórnio </a> </li>
+
+            <li> <a href="internas/aquario.html" target="_blank"><span>&#9811;</span> Aquário </a> </li>
+
+            <li> <a href="internas/peixe.html" target="_blank"> <span>&#9810;</span> Peixes</a> </li>
+        </ul>
+
+        <section id="fotos">
+            <div class="container">
+                <h2 class="titulo-secao">Personalidade de cada signo</h2>
+                <div id="galeria-fotos">
+                    <a href="imagens/fotos/fotos-galeria/aries.png" title="Áries"><img src="imagens/fotos/fotos-galeria/aries.png" alt=""></a>
+                    <a href="imagens/fotos/fotos-galeria/touro.png" title="Touro"><img src="imagens/fotos/fotos-galeria/touro.png" alt=""></a>
+                    <a href="imagens/fotos/fotos-galeria/gemeos.png" title="Gêmeos"><img src="imagens/fotos/fotos-galeria/gemeos.png" alt=""></a>
+                    <a href="imagens/fotos/fotos-galeria/cancer.png" title="Câncer"><img src="imagens/fotos/fotos-galeria/cancer.png" alt=""></a>
+                    <a href="imagens/fotos/fotos-galeria/leao.png" title="Leão"><img src="imagens/fotos/fotos-galeria/leao.png" alt=""></a>
+                    <a href="imagens/fotos/fotos-galeria/virgem.png" title="Virgem"><img src="imagens/fotos/fotos-galeria/virgem.png" alt=""></a>
+                    <a href="imagens/fotos/fotos-galeria/libra.png" title="Libra"><img src="imagens/fotos/fotos-galeria/libra.png" alt=""></a>
+                    <a href="imagens/fotos/fotos-galeria/escorpiao.png" title="Escorpião"><img src="imagens/fotos/fotos-galeria/escorpiao.png" alt=""></a>
+                    <a href="imagens/fotos/fotos-galeria/sagitario.png" title="Sagitário"><img src="imagens/fotos/fotos-galeria/sagitario.png" alt=""></a>
+                    <a href="imagens/fotos/fotos-galeria/capricornio.png" title="Capricórnio"><img src="imagens/fotos/fotos-galeria/capricornio.png" alt=""></a>
+                    <a href="imagens/fotos/fotos-galeria/aquario.png" title="Aquário"><img src="imagens/fotos/fotos-galeria/aquario.png" alt=""></a>
+                    <a href="imagens/fotos/fotos-galeria/peixes.png" title="Peixes"><img src="imagens/fotos/fotos-galeria/peixes.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="video">
+            <div class="container">
+                <h2 class="titulo-secao">Astrologia pra quem não conhece: </h2>
+                <iframe src="https://www.youtube.com/watch?v=ANxDRMF3X7I" title="YouTube" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <footer id="rodape">
+            Página Web desenvolvida por Ellen Lira, <br>discente do 1º período do curso de Sistema de Informação,<br>como um método de avaliação na matéria de Introdução à Tecnologia Web <br> do <a href="http://www.unirios.edu.br">Centro Universitário do Rio São Francisco. </a></p>
+        </footer>
+</body>
+
+</html>
